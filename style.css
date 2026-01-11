@@ -1,43 +1,106 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f0f0f0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
+body {
+    background: radial-gradient(circle at top, #0f2027, #000);
+    color: #fff;
+}
+
+/* ===== HEADER ===== */
 header {
-    background: #111;
-    color: white;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ff004c, #7a00ff);
 }
 
+header h1 {
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #eee;
+}
+
+/* ===== NAV ===== */
 nav {
-    background: #333;
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    padding: 15px;
 }
 
 nav a {
-    color: white;
-    margin: 10px;
+    color: #0ff;
     text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
+nav a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+/* ===== SECTION ===== */
 section {
-    padding: 20px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
 }
 
+/* ===== CARDS ===== */
 .card {
-    background: white;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(0,255,255,0.3);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 25px rgba(0,255,255,0.15);
+    transition: 0.3s;
 }
 
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgba(255,0,255,0.4);
+}
+
+.card h3 {
+    color: #00ffff;
+}
+
+.card p {
+    color: #ccc;
+    margin: 10px 0;
+}
+
+/* ===== BUTTON ===== */
 button {
-    padding: 8px 15px;
+    padding: 10px 18px;
     border: none;
-    background: #111;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff004c, #7a00ff);
     color: white;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000;
+    color: #aaa;
 }
